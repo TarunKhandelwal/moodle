@@ -127,7 +127,7 @@ class pgsql_native_moodle_database extends moodle_database {
         }
 
         $this->store_settings($dbhost, $dbuser, $dbpass, $dbname, $prefix, $dboptions);
-
+		echo($dbhost);
         $pass = addcslashes($this->dbpass, "'\\");
 
         // Unix socket connections should have lower overhead
