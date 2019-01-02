@@ -167,7 +167,7 @@ class pgsql_native_moodle_database extends moodle_database {
 
         ob_start();
         if (empty($this->dboptions['dbpersist'])) {
-			echo($connection);
+			echo($pass);
             $this->pgsql = pg_connect($connection, PGSQL_CONNECT_FORCE_NEW);
         } else {
             $this->pgsql = pg_pconnect($connection, PGSQL_CONNECT_FORCE_NEW);
