@@ -1,4 +1,4 @@
-cd /
+cd /app
 find . -name "access_log"
 ls -a
 # echo "Installing PECL APC"
